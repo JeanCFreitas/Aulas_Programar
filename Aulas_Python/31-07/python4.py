@@ -1,10 +1,7 @@
-n1=float(input('Digite primeira nota:'))
-n2=float(input('Digite segunda nota:'))
-n3=float(input('Digite terceira nota:'))
-media=(n1+n2+n3)/3
-if media>=6.0:
-    print(f"Parabéns! Você foi aprovado com média {media}")
+v1=float(input("Digite o primeiro valor:"))
+v2=float(input("Digite o segundo valor:"))
+
+if(v1>v2):
+    print(f"O maior numero é {v1}, equanto o menor numero é {v2}")
 else:
-    print(f"Infelizmente você não foi aprovado com média {media}")
-if media>10:
-    print("Nota invalida")
+    print(f"O maior numero é {v2}, equanto o menor numero é {v1}")
