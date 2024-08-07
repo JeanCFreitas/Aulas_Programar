@@ -6,22 +6,42 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Caixas</title>
     <style>
-        div{background-color: blueviolet;
+        .divisão1{background-color: blueviolet;
         height: 100px;
         width: 450px;
-        border: 3px solid yellow;
+        border: 10px transparent;
+        /*border-radius: 10px;*/
+        margin: 3px 10px 10px 3px;
+        box-shadow: 10px 10px gray;
+        padding: 10px 20px 5px 30px;
+        border-image-source: url(border1.png);
+        border-image-slice:30;
+        border-image-width: 1rem;
+        border-image-outset: -5rem;
+        border-image-repeat: stretch ;
         }
-        h3{color:aquamarine;}
-        p{color: aliceblue;}
+        .divisão2{background-color: chartreuse;
+        height: 150px;
+        width: 300px;
+        border: 10px solid;
+        /*border-radius: 10px;*/
+        margin: 3px 10px 10px 3px;
+        box-shadow: 10px 10px gray;
+        padding: 10px 20px 5px 30px;
+        }
+        h3{color:rgb(82, 52, 117);}
+        p{color: rgb(0, 140, 255);}
 
     </style>
 </head>
 <body>
-    <div>
+    <div class="divisão1">
         <h3>Divisão 1</h3>
-        <p>Está é a primeira divisão</p>
+        <p>Está é a primeira divisão.
+            asdasdawsdwasd
+        </p>
     </div>
-    <div>
+    <div class="divisão2">
         <h3>Divisão 2</h3>
         <p>Esta é a segunda divisão</p>
     </div>
