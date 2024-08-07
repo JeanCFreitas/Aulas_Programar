@@ -1,0 +1,227 @@
+* {
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+}
+
+body, html {
+    overflow-x: hidden !important;
+}
+
+/*Cabeçalho*/
+.partesuperior {
+    background-color: rgb(18, 9, 68);
+    height: 90px;
+    width: 1920px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.login {
+    margin-left: 50px;
+    margin-right: 0%;
+}
+
+.btologin {
+    height: 32x;
+    width: 32px;
+    margin-top: 5px;
+}
+
+.carrinho {
+    margin-left: 17px;
+    margin-right: 50px;
+}
+
+.kart {
+    flex-grow: 1;
+    flex-basis: 200;
+    height: 32px;
+    width: 32px;
+    margin-top: 5px;
+}
+
+.logo {
+    margin-right: 50px;
+    margin-left: 0%;
+}
+
+.JBGD {
+    width: 115px;
+    margin-top: 5px;
+}
+
+.pesquisa {
+    background-color: rgb(123, 123, 148);
+    border-radius: 10px;
+    width: 370px;
+    height: 32px;
+    display: flex;
+    align-items: center;
+    box-shadow: 4px 7px 1px black;
+}
+
+.txtbuscar {
+    background-color: transparent;
+    font-size: 18px;
+    padding-left: 10px;
+    border: none;
+    height: 32px;
+    width: 191px;
+}
+
+textarea:focus, input:focus, select:focus {
+    box-shadow: 0 0 0 0;
+    border: 0 none;
+    outline: 0;
+} 
+
+::-webkit-input-placeholder {
+    color: black;
+}
+
+.lupa {
+    width: 22px;
+    margin-top: 1px;
+    margin-left: 145px;
+}
+
+/*Parte inferior do cabeçalho*/
+.parteinferior {
+    background-color: rgb(59, 47, 133);
+    height: 28px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 70px 7px 70px black;
+}
+
+@font-face {   /* Nova fonte */
+    font-family: pixel;
+    src: url(Fontes/dogica.ttf); 
+}
+
+.bto {
+    color: white;
+    padding: 10px;
+    text-decoration: none;
+    font-size: 12px;
+    font-family: pixel;
+}
+
+.bto:hover {
+    color: rgb(0, 0, 0);
+    transition: 1s;
+}
+
+/*Produto*/
+main {
+    background-color: rgb(32, 31, 34);
+    height: 925px;
+    padding: 50px;
+    padding-top: 140px;
+}
+
+.produto {
+    background-color: rgb(85, 84, 84);
+    width: 1100px;
+    height: 500px;
+    margin: 0 auto;
+    border-radius: 20px;
+}
+
+.card {
+    display: flex;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 1% 1%;
+    padding: 15px;
+}
+
+.imgproduto img {
+   width: 400px;
+   border-radius: 20px;
+}
+
+.imgproduto {
+    margin-top: 29px;
+    margin-left: 15px
+}
+
+.infos  {
+    margin: 15px;
+    width: 330px;
+    padding-top: 11px;
+    padding-left: 15px;
+}
+
+.infos p {
+    padding: 6px;
+    color: rgb(255, 255, 255);
+}
+
+#titulo {
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    border-bottom: 2px solid rgb(18, 9, 68);
+    border-left: 2px solid rgb(18, 9, 68);
+}
+
+.compra {
+    margin-left: 20px;
+    margin-top: 48px;
+}
+
+.preço {
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    font-size: 39px;
+    border-bottom: 2px solid rgb(18, 9, 68);
+    text-align: center;
+}
+
+.btocarrinho {
+    display: block;
+    width: 200px;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    background-color: rgb(59, 47, 133);
+    color: white;
+    padding: 15px;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+.btocarrinho:hover {
+    background-color: rgb(18, 9, 68);
+    transition: 1s;
+}
+
+/*rodapé*/
+footer {
+    width: 100%;
+    background-color: rgb(18, 9, 68);
+}
+
+.redes {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.redeicons {
+    width: 20px;
+    height: 20px;
+    margin: 5px;
+    margin-top: 8px;
+    filter: invert(); 
+}
+
+.copyright {
+    color: white;
+    font-size: 22px;
+    margin-top: 5px;
+    padding-left: 10px;
+}
