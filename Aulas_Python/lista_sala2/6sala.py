@@ -1,7 +1,7 @@
 print("Equação de 2º grau")
-A=float(input("A: "))
-B=float(input("B: "))
-C=float(input("C: "))
+A=float(input("A: \n"))
+B=float(input("B: \n"))
+C=float(input("C: \n"))
 D=(B**2)-(4*A*C)
 if (D<0):
     print("As raízes não são números Reais!")

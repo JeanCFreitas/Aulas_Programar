@@ -1,6 +1,6 @@
-A=float(input('Digite primeiro numero:'))
-B=float(input('Digite segundo numero:'))
-C=float(input('Digite terceiro numero:'))
+A=float(input('Digite primeiro numero:\n'))
+B=float(input('Digite segundo numero:\n'))
+C=float(input('Digite terceiro numero:\n'))
 if (A>B>C):
     print(f'Maior número:{A} / Número do meio:{B} / Menor número:{C}. ')
 elif (A>C>B):

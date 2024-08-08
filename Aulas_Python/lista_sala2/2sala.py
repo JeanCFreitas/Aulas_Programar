@@ -1,5 +1,5 @@
-n1=float(input('Digite primeira nota:'))
-n2=float(input('Digite segunda nota:'))
+n1=float(input('Digite primeira nota:\n'))
+n2=float(input('Digite segunda nota:\n'))
 media = (n1 + n2)/2
 if media>=6.0:
     print(f"Parabéns! Você foi aprovado com média {media}")

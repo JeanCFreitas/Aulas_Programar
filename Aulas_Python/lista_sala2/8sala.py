@@ -1,7 +1,6 @@
-print("3 números inteiros divisíveis por 2 e 3")
-A=int(input("1º Número: "))
-B=int(input("2º Número: "))
-C=int(input("3º Número: "))
+A=int(input("1º Número: \n"))
+B=int(input("2º Número: \n"))
+C=int(input("3º Número: \n"))
 
 
 if (A%3==0 and A%2==0):

@@ -1,6 +1,6 @@
-A = float(input("Digite o lado A do triângulo: "))
-B = float(input("Digite o lado B do triângulo: "))
-C = float(input("Digite o lado C do triângulo: "))
+A = float(input("Digite o lado A do triângulo: \n"))
+B = float(input("Digite o lado B do triângulo: \n"))
+C = float(input("Digite o lado C do triângulo: \n"))
 
 if (A==B and B==C):
         print("Esse triângulo é Equilátero!")

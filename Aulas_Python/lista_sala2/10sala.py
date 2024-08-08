@@ -1,4 +1,4 @@
-mes=int(input('Digite o numero do mês:'))
+mes=int(input('Digite o numero do mês:\n'))
 if (mes==1):
     print('Janeiro ')
 elif (mes==2):

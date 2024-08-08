@@ -1,5 +1,5 @@
-N1=float(input("Número 1: "))
-N2=float(input("Número 2: "))
+N1=float(input("Número 1: \n"))
+N2=float(input("Número 2: \n"))
 D=0
 if (N1>N2):
     D=N1-N2
