@@ -1,0 +1,6 @@
+
+while (num<20)
+if num%2==0:
+    print(f"{num} é Par")
+else:
+    print(f"{num} é Impar")
