@@ -3,23 +3,23 @@ B=float(input('Digite segundo numero:'))
 C=float(input('Digite terceiro numero:'))
 D=float(input('Digite quarto numero:'))
 E=float(input('Digite quinto numero:'))
-if (A>B or A>C or A>D or A>E):
+if (A>B and A>C and A>D and A>E):
     print(f'Maior número:{A}')
-elif (A<B or A<C or A<D or A<E):
+if (A<B and A<C and A<D and A<E):
     print(f'Menor número:{A}')
-elif (B>A or B>C or B>D or B>E):
+if (B>A and B>C and B>D and B>E):
     print(f'Maior número:{B}')
-elif (B<A or B<C or B<D or B<E):
+if (B<A and B<C and B<D and B<E):
     print(f'Menor número:{B}')
-elif (C>A or C>B or C>D or C>E):
+if (C>A and C>B and C>D and C>E):
     print(f'Maior número:{C}')
-elif (C<A or C<B or C<D or C<E):
+if (C<A and C<B and C<D and C<E):
     print(f'Menor número:{C}')
-elif (D>A or D>C or D>B or D>E):
+if (D>A and D>C and D>B and D>E):
     print(f'Maior número:{D}')
-elif (D<A or D<C or D<B or D<E):
+if (D<A and D<C and D<B and D<E):
     print(f'Menor número:{D}')
-elif (E>A or E>C or E>D or E>B):
+if (E>A and E>C and E>D and E>B):
     print(f'Maior número:{E}')
-elif (E<A or E<C or E<D or E<B):
+if (E<A and E<C and E<D and E<B):
     print(f'Menor número:{E}')
