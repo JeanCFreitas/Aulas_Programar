@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test</title>
+    <style>
+        header{background-color:gray;}
+        .titulo{text-align: center; color: white; text-shadow: 2px 2px 10px black;}
+        nav{background-color: #907bca; height: 50px; display: flex;}
+            nav ul{list-style-type: none;display:flex; flex:1;}
+            nav li{display: inline; text-align: center; flex:1;}
+            nav form{flex: 1;display: flex; align-items: center; height: 100%;}
+    
+        .container {display: flex; justify-content: space-between; width: 100%; height: 100%;}
+        .left, .middle, .right {width: 30%; height: 100%; display: flex; justify-content: center;
+            align-items: center; border: 1px solid black;}
+        .left {background-color: lightblue;}
+        .middle {background-color: lightgreen; width: 30%;}
+        .right {background-color: lightcoral;}
+    </style>
+</head>
+<body>
+    <header>
+        <h1 class="titulo"><center>Animes legais</center></h1>
+        </header>
+        
+        <nav>
+        <ul>
+        <li><a href="#">Principal</a></li>
+        <li><a href="#">Hospedagem</a></li>
+        <li><a href="#">Roteiros</a></li>
+        </ul>
+        </nav>
+
+
+
+    <div class="container">
+        <div class="left">Left<img src="jojo.jpeg" height="270">
+        <br></div>
+        <div class="middle">Middle<img src="DBSBROLY.jpg" height="270"></div>
+        <div class="right">Right<img src="JJK.png" height="270"></div>
+    </div>
+</body>
+</html>
