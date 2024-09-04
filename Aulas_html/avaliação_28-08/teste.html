@@ -15,9 +15,11 @@
         .container {display: flex; justify-content: space-between; width: 100%; height: 100%;}
         .left, .middle, .right {width: 30%; height: 100%; display: flex; justify-content: center;
             align-items: center; border: 1px solid black;}
-        .left {background-color: lightblue;}
+        .left {background-color: lightblue; text-align: justify;}
+        .left img {display: block; margin: 0 auto;}
         .middle {background-color: lightgreen; width: 30%;}
         .right {background-color: lightcoral;}
+        p{text-align: justify;}
     </style>
 </head>
 <body>
@@ -27,19 +29,30 @@
         
         <nav>
         <ul>
-        <li><a href="#">Principal</a></li>
-        <li><a href="#">Hospedagem</a></li>
-        <li><a href="#">Roteiros</a></li>
+        <li><a href="#">Jogos</a></li>
+        <li><a href="#">Outros Animes</a></li>
+        <li><a href="#">Filmes</a></li>
         </ul>
         </nav>
 
 
 
     <div class="container">
-        <div class="left">Left<img src="jojo.jpeg" height="270">
-        <br></div>
-        <div class="middle">Middle<img src="DBSBROLY.jpg" height="270"></div>
-        <div class="right">Right<img src="JJK.png" height="270"></div>
+        <div class="left">
+            <figure>
+                <img src="jojo.jpeg" height="270"> <p>Left</p>
+            </figure>
+            </div>
+        <div class="middle">
+            <figure>
+                <img src="DBSBROLY.jpg" height="270"> <p>Middle</p>
+            </figure>
+            </div>
+        <div class="right">
+            <figure>
+                <img src="JJK.png" height="270"> <p>Right</p>
+            </figure>
+            </div>
     </div>
 </body>
 </html>
