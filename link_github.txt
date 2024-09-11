@@ -1,3 +1,5 @@
 Link github: https://github.com/JeanCFreitas/Aulas_Programar
 
 Link gitclone: https://github.com/JeanCFreitas/Aulas_Programar.git
+
+Dar update no repositório git: git pull origin main 
