@@ -1,0 +1,98 @@
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+section {
+    background-color: rgb(243, 229, 238);
+    height: 450px;
+    display: grid;
+    justify-content: center;
+    align-self: center;
+    align-items: center;
+    text-align: center;
+}
+
+.titu {
+    color: rgb(72, 5, 44);
+    text-align: center;
+    padding-top: 30px;
+    font-size: x-large;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.infos {
+    font-size: larger;
+    text-align: center;
+    width: 1200px;
+}
+
+
+img {
+    height: 230px;
+    width: 350px;
+    padding: 10px;
+}
+
+.radius {
+    border-radius: 50px;
+}
+
+.border {
+    border: 15px solid white;
+    padding: 0%;
+    margin: 10px;
+}
+
+.responsive {
+    height: 230px;
+    width: 600px;
+    max-width: 100%;
+}
+
+.polaroid {
+    border-bottom: solid white 30px;
+    border-left: solid white 10px;
+    border-top: solid white 10px;
+    border-right: solid white 10px;
+    padding: 0%;
+    margin: 20px;
+}
+
+.op1 {
+    opacity: 0.2;
+}
+
+.op2 {
+    opacity: 0.5;
+}
+
+.imgtext {
+    height: 230px;
+    width: 600px;
+}
+
+.filter2 {
+    filter: invert();
+}
+
+.filter1 {
+    filter: blur(3px);
+}
+
+.filter3 {
+    filter: sepia();
+}
+
+.flip1:hover {
+    transform: scaleX(-1);
+  }
+
+.flip2:hover {
+    transform: scaleX(-1);
+  }
+
+.flip3:hover {
+    transform: scaleX(-1);
+  }

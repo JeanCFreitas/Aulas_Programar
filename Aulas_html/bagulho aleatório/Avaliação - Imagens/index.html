@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Avaliação - Imagens</title>
+</head>
+<body>
+    <main>
+        <section>
+            <div class="titu"><h1>1- Rounded Images</h1></div>
+            <div class="infos">
+                <p>Use a propiedade "border-radius" para criar imagens arredondadas.</p>
+                <p>Observe as imagens com "border-radius 30px":</p>
+            </div>
+            <div class="imgs">
+                <img src="imagens/gato preto.jpeg" class="radius">
+                <img src="imagens/gato branco.webp" class="radius">
+                <img src="imagens/Gato Laranja.jpeg" class="radius">
+            </div>
+        </section>
+        <section>
+            <div class="titu"><h1>2- Thumbnail Images</h1></div>
+            <div class="infos">
+                <p>Use a propiedade "border" para criar imagens em miniatura.</p>
+                <p>Observe as imagens com "border: 15px solid white":</p>
+            </div>
+            <div class="imgs">
+                <img src="imagens/gato preto.jpeg" class="border">
+                <img src="imagens/gato branco.webp" class="border">
+                <img src="imagens/Gato Laranja.jpeg" class="border">
+            </div>
+        </section>
+        <section>
+            <div class="titu"><h1>3- Responsive Images</h1></div>
+            <div class="infos">
+                <p>As imagens responsivas se ajustarão automaticamente ao tamanho da tela. Se você quiser que uma imagem 
+                    diminua se for necessário, mas nunca aumente para ser maior que seu tamanho original, adicione o 
+                    seguinte: "max-width: 100%; height: auto;"</p>
+                <p>Redimensione a janela do navegador para ver o efeito:</p>
+            </div>
+            <div class="imgs">
+                <img src="imagens/gato si.jpg" class="responsive">
+            </div>
+        </section>
+        <section>
+            <div class="titu"><h1>4- Center an Image</h1></div>
+            <div class="infos">
+                <p>Para centralizar uma imagem, defina as margens esquerda e direita autoe transforme-a em um blockelemento.</p>
+                <p>Use:  "display: block; margin-left: auto; margin-right: auto; width: 50%;"</p>
+            </div>
+            <div class="imgs">
+                <img src="imagens/gato si.jpg" class="responsive">
+            </div>
+        </section> 
+        <section>
+            <div class="titu"><h1>5 - Polaroid Images / Cards</h1></div>
+            <div class="infos">
+                <p>
+                    Exemplo
+                    div.polaroid {
+                      width: 80%;
+                      background-color: white;
+                      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+                    }
+                    
+                    img {width: 100%}
+                    
+                    div.container {
+                      text-align: center;
+                      padding: 10px 20px;
+                    }
+                    </p>
+            </div>
+            <div class="imgs">
+                <img src="imagens/gato preto.jpeg" class="polaroid">
+                <img src="imagens/gato branco.webp" class="polaroid">
+            </div>
+        </section>
+        <section>
+            <div class="titu"><h1>6 - Transparent Image</h1></div>
+            <div class="infos">
+                <p>A  propiedade "opacity" pode ter um valor de 0,0 a 1,0. Quanto menor o valor, mais transparente:</p>
+                <p>Observe as imagens com opacidade 0,2, 0,5 e 1 (default) respectivamente:</p>
+            </div>
+            <div class="imgs">
+                <img src="imagens/gato preto.jpeg" class="op1">
+                <img src="imagens/gato branco.webp" class="op2">
+                <img src="imagens/Gato Laranja.jpeg" class="">
+            </div>
+        </section>
+        <section>
+            <div class="titu"><h1>7 - Image Text</h1></div>
+            <div class="infos">
+                <p>Como posicionar texto em imagem</p>
+            </div>
+            <div class="imgs">
+                <img src="imagens/gato si.jpg" class="imgtext">
+            </div>
+        </section> 
+        <section>
+            <div class="titu"><h1>8 - Image Filter</h1></div>
+            <div class="infos">
+                <p>A  propiedade "filter" adiciona efeitos visuais (como blur e saturação) ao elemento.</p>
+                <p>Nota: A propiedade "filter" não é suportada no Internet Explorer or Edge 12.</p>
+            </div>
+            <div class="imgs">
+                <img src="imagens/gato preto.jpeg" class="filter1">
+                <img src="imagens/gato branco.webp" class="filter2">
+                <img src="imagens/Gato Laranja.jpeg" class="filter3">
+            </div>
+        </section>
+        <section>
+            <div class="titu"><h1>9 - Image Hover Overlay</h1></div>
+            <div class="infos">
+                <p>Crie um efeito de overlay com hover:</p>
+            </div>
+            <div class="imgs" id="imgs2">
+                <img src="imagens/gato preto.jpeg" class="hover1">
+                <img src="imagens/gato branco.webp" class="hover2">
+                <img src="imagens/Gato Laranja.jpeg" class="hover3">
+            </div>
+        </section>
+        <section>
+            <div class="titu"><h1>10 - Flip an Image</h1></div>
+            <div class="infos">
+                <p>Passe o mouse sobre a imagem!</p>
+            </div>
+            <div class="imgs" id="imgs2">
+                <img src="imagens/gato preto.jpeg" class="flip1">
+                <img src="imagens/gato branco.webp" class="flip2">
+                <img src="imagens/Gato Laranja.jpeg" class="flip3">
+            </div>
+        </section>
+    </main>
+</body>
+</html>
