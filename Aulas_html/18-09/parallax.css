@@ -1,0 +1,24 @@
+body{margin:0; font:18px; color:#777;height: 100%;}
+h3{text-transform: uppercase; color: #111;
+text-align: center;}
+
+.conteudo{color:#777;background-color: white;
+text-align: justify; padding:80px 50px;}
+
+.caixa1{background-image:url(foto1.jpg);}
+.caixa2{background-image: url(foto2.jpeg);}
+.caixa3{background-image: url(foto3.jpeg);}
+
+.caixa1,.caixa2,.caixa3
+{border:2px solid red;
+height: 100%;
+opacity: 0.7;
+background-repeat: no-repeat;
+background-position: center;
+background-attachment: fixed;}
+
+.conteudo-titulo{position: absolute;left:50%;
+top:50%; color:#fff;
+background-color:#111;
+padding: 18px;font-size:25px;
+letter-spacing: 5px;}
