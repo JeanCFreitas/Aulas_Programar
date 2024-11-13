@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personalizar Imagem</title>
+    <style>
+        #round {
+            border-radius: 50px;
+            background: url(paper.gif);
+            background-position: left top;
+            background-repeat: repeat;
+            padding: 20px;
+            width: 200px;
+            height: 150px;
+        }
+        #thumb {border: 1px solid #ddd;
+            border-radius: 4px;
+            padding: 5px; 
+            width: 150px; 
+        }
+        #thumb:hover {
+            box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
+        }
+        #responsive {
+            max-width: 100%;
+            height: auto;
+        }
+        #center {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width: 50%;
+        }
+        #card {
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+            transition: 0.3s;
+            width: 500px;
+            
+            
+        }
+        #card:hover {
+            box-shadow: 0 8px 17px 0 rgba(0,0,0,0.2);
+        }
+        #container {
+            padding: 2px 16px;
+        }
+        #transparent {
+            position: relative;
+            max-width: 700px;
+        }
+        #transparent .content {
+            position: absolute;
+            bottom: 0;
+            background: rgba(32, 32, 32, 0.5);
+            color: #ffffff;
+            width: 410px;
+            padding: 20px;
+        }
+        #text {
+            position: relative;
+            color: white;
+        }
+        #bottom {
+            position: absolute;
+            bottom: 10px;
+            left: 250px;
+            transform: translate(-50%, -50%)
+        }
+        #top {
+            position: absolute;
+            top: 20px;
+            left: 250px;
+            transform: translate(-50%, -50%);
+        }
+        #filter{
+            filter: blur(2px);
+        }
+
+        #filter1{
+            filter:saturate(9);
+        }
+        .container {
+            position: relative;
+            width: 50%;
+        }
+        .image {
+            display: block;
+            width: 100%;
+            height: auto;
+        }
+        .overlay {
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            height: 100%;
+            width: 100%;
+            opacity: 0;
+            transition: .5s ease;
+            background-color: #ba0000;
+        }
+        .container:hover .overlay {
+            opacity: 1;
+        }
+        .text {
+            color: white;
+            font-size: 20px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            -webkit-transform: translate(-50%, -50%);
+            -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+            text-align: center;
+        }
+        #flip:hover {
+            -webkit-transform: scaleX(-1);
+            transform: scaleX(-1);
+        }
+
+</style>
+</head>
+<body>
+    <div><h1>Rounded Images</h1>
+        <p>"rounded images" deixam a imagem com uma borda redonda</p>
+        <img src="https://criticalhits.com.br/wp-content/uploads/2023/12/maxresdefault-12.jpg" id="round">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSh5i6lhqVKqGzwZPkG0LQs_BAkoNFJpD8CSw&s" id="round">
+        <img src="https://i0.wp.com/criticalhit.com.au/wp-content/uploads/2023/12/00088459106_08.jpg?fit=800%2C700&ssl=1" id="round">
+    </div>
+    <div>
+        <h1>Thumbnail Images</h1>
+        <p>"Thumbnail" cria uma imagem com contorno que manda para outra página</p>
+        <a target="_blank" href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRHmV6XfY9xtlPaRUYHUW50P6ebRMHmun6Jfw&s">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRHmV6XfY9xtlPaRUYHUW50P6ebRMHmun6Jfw&s" id="thumb">
+        </a>
+        <a target="_blank" href="https://tr.rbxcdn.com/a954db36b3ef5a87625378c83ad5affd/420/420/Hat/Webp">
+            <img src="https://tr.rbxcdn.com/a954db36b3ef5a87625378c83ad5affd/420/420/Hat/Webp" id="thumb">
+        </a>
+        <a target="_blank" href="https://geeknexus.com.br/wp-content/uploads/2024/04/JoJos-Bizarre-Adventure-Nova-Action-Figure-de-Jonathan-Joestar-Chega-ao-Mercado.webp">
+            <img src="https://geeknexus.com.br/wp-content/uploads/2024/04/JoJos-Bizarre-Adventure-Nova-Action-Figure-de-Jonathan-Joestar-Chega-ao-Mercado.webp" id="thumb">        </a>
+    </div>
+    <div>
+        <h1>Responsive Images</h1>
+        <p>"Responsive images" são imagens que se ajustam ao tamanho da tela</p>
+        <img src="https://www.w3schools.com/howto/img_nature_wide.jpg" id="responsive" class="responsive"> 
+    </div>
+    <div>
+        <h1>Center an Image</h1>
+        <p>"Center" centraliza as imagens</p>
+        <img src="https://deltarune.com/assets/images/dr-stickers.png" id="center" class="center"> 
+    </div>
+    <div id="card">
+        <h1>Cards</h1>
+        <p>"cards" fazem cartões com imagem e palavras</p>
+        <img src="https://s2-quem.glbimg.com/en0GNiG6D_cdZiSBj1xquYbffGc=/127x75:892x840/fit-in/1080x1080/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_b0f0e84207c948ab8b8777be5a6a4395/internal_photos/bs/2022/y/b/Oekq7eRJKN1CeawAogbw/2021-01-07-keanu-reeves.jpeg" height="500">
+        <div id="container">
+          <h4><b>Keanu Reeves</b></h4>
+          <p>Ator</p>
+        </div>
+    </div>
+    <div>
+        <h1>Transparent Image</h1>
+        <p>"Transparent" deixa uma barra transparente com texto em cima da imagem</p>
+        <div id="transparent">
+            <img src="https://www.w3schools.com/w3images/notebook.jpg" height="300">
+            <div class="content">
+              <h1>Heading</h1>
+              <p>Lorem ipsum..</p>
+            </div>
+          </div> 
+    </div>
+    <div>
+        <h1>Image Text</h1>
+        <p>"Image text" coloca texto em cima da imagem</p>
+        <div id="text">
+            <img src="https://i.imgflip.com/4qt4jt.jpg?a479136" width="500">
+           <div id="top"><b>Erro gramatical</b></div>
+           <div id="bottom"><b>Eu venci</b></div>
+        </div>
+    </div>
+    <div>
+        <h1>Image Filter</h1>
+        <p>"Filter" aplica um filtro por cima ma imagem</p>
+        <div><h2>Sem "Filter" // "Filter" borrado // "Filter" saturação </h2>
+            <img src="https://sm.ign.com/t/ign_br/screenshot/default/goku-39709121_3ek8.320.jpg">
+            <img src="https://sm.ign.com/t/ign_br/screenshot/default/goku-39709121_3ek8.320.jpg" id="filter">
+            <img src="https://sm.ign.com/t/ign_br/screenshot/default/goku-39709121_3ek8.320.jpg" id="filter1">
+        </div>
+    </div>
+    <div>
+        <h1>Image Hover Overlay</h1>
+        <p>"Hover Overlay" faz um texto aparecer quando o mouse esta em cima da imagem</p>
+        
+        <div class="container">
+            <img src="https://scfoods.fbitsstatic.net/img/p/melancia-mini-unidade-70680/257182.jpg?w=800&h=800&v=no-change&qs=ignore" height="100" alt="Avatar" class="image">
+            <div class="overlay">
+              <div class="text">Isto é uma melância</div>
+            </div>
+          </div>
+    </div>
+    <div>
+        <h1>Flip an Image</h1>
+        <p>"Flip an Image" faz a imagem girar quando o mouse esta em cima</p>
+        <img src="https://m.media-amazon.com/images/I/51fb1YMENZL._AC_UF894,1000_QL80_.jpg" height="400" id="flip">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTiiSODK3zgzBG72YzTVLv0vPBiTcAsvhxDNg&s" height="400" id="flip">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT-NHH7XIYJQi_BMALKtp6C9qyI8vFQzL-bSg&s" height="400" id="flip">
+    </div>
+</body>
+</html>
