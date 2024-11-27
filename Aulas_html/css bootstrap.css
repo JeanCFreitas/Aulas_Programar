@@ -1,0 +1,28 @@
+* {
+    margin-top: 0%;
+    padding: 0%;
+    margin: 0%;
+}
+
+header {
+    background-color: rgb(74, 16, 128);
+    border-bottom: solid 5px white;
+}
+
+#flori {
+    font-family: cursive;
+}
+
+main {
+    background-color: rgb(114, 92, 162);
+    height: 850px;
+}
+
+footer {
+    background-color: rgb(74, 16, 128);
+    height: 30px;
+}
+
+#desc {
+    font-size: 25px;
+}
