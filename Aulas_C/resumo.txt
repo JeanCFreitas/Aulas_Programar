@@ -1,5 +1,0 @@
-%c = leitura de caractere
-%d (%i) = leitura de numeros inteiros
-%e = leitura de numeros em notação cientifica
-%f = leitura de numeros reais
-%s = leitura de uma série de numeros

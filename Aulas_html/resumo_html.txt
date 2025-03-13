@@ -1,6 +1,0 @@
-Anotar comandos html:
-head: cabeça do html
->title: O  titulo na aba do navegador
-
-body: o corpo do html
->h1: O titulo no conteudo da página
