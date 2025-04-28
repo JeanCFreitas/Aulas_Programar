@@ -37,9 +37,9 @@ class desenvolvedor(funcionario):
             
         return salario
     
-a = gerente("Gui", 3000, 200)
-b = vendedor("André", 200, 10, 0)
-c = desenvolvedor("J", 100, 200)
+a = gerente("Gui:", 3000, 200)
+b = vendedor("André:", 200, 10, 0)
+c = desenvolvedor("J:", 100, 100)
 print(a.nome,a.salario())
 print(b.nome,b.salario())
 print(c.nome,c.salario())
