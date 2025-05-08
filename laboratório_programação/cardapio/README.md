@@ -68,3 +68,5 @@ Lá-lá, lá-lá (lá-lá-lá-lá)
 Lá-lá, lá-lá (lá-lá-lá-lá)
 Lá-lá, lá-lá (lá-lá-lá-lá)
 Lá-lá, lá-lá (lá-lá-lá-lá)
+
+![](https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fi.scdn.co%2Fimage%2Fab67616d0000b273949362d1982c686085dea067&f=1&nofb=1&ipt=c036cccf8f79c314625e9f0b2d0a4f36580168028ab4b4f2f195b95ea9f41071)
