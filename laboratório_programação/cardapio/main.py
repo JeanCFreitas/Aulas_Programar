@@ -53,15 +53,15 @@ class Wish:
     def atribute_customer(self,customer:"Customer"):
         self.customer=customer
 
-    def add_item(self,menu_ref:"Menu",name_item:str)->None:
+    def add_item(self,menu_ref:"Menu",name_item:str,amount:int)->None:
         if not menu_ref.find_item(name_item):
             print("This item doesn't exist in our menu")
             return
 
         if (name_item in self.list.keys()):
-            self.list[name_item]+=1
+            self.list[name_item]+=amount
             return
-        self.list[name_item]=1
+        self.list[name_item]=amount
     def rmv_item(self,item_name:str)->None:
         if (item_name in self.list.keys()):
             del self.list[item_name]
@@ -74,7 +74,7 @@ class Wish:
             tot+=item.price*self.list[i]
         return tot
     def display_infos(self,menu_ref:"Menu"):
-        print("Request by {} | {}".format(self.custumer.name,self.status))
+        print("Request by {} | {}".format(self.customer.name,self.status))
         for i in self.list.keys():
             item=menu_ref.get_item(i)
             item.display_item()
@@ -83,7 +83,7 @@ class Wish:
         width_win=int(width_win.stdout.strip())
         print("~"*width_win)
         for j in self.list.keys():
-            print("{}x{} ".format(i,self.list[i]))
+            print("{} x {} ".format(j,self.list[i]))
 
 class Customer:
     def __init__(self,name:str,cellphone:str,wish:"Wish")->None:
@@ -107,18 +107,17 @@ class Customer:
             return
         for i in self.wish.list.keys():
             print("{}x{} ".format(i,self.wish.list[i]))
+    def finish_wish(self):
+        self.wish=None
 
 if __name__=="__main__":
-    tst=Wish(None)
     menu=Menu()
-    customer=Customer("Jose","123456789",None)
-    tst.add_item(menu,"pizza")
-    tst.add_item(menu,"xtudo")
-    tst.add_item(menu,"pizza")
-    tst.add_item(menu,"pizza")
-    tst.add_item(menu,"macarrao")
-    customer.atribute_wish(tst)
-    tst.atribute_customer(customer)
+    customer=Customer("Mary",123456789,Wish(None))
+    customer.wish.atribute_customer(customer)
 
-    customer.display_person()
-    print(tst.calc_tot(menu))
+    some_products=["pizza","xtudo","cerebro de macaco"]
+    for i in some_products:
+        customer.wish.add_item(menu,i,1)
+    customer.wish.display_infos(menu)
+    print(customer.wish.calc_tot(menu))
+    customer.finish_wish
