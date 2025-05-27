@@ -1,0 +1,2 @@
+//node lógica_programação/27-05/Laço1.js
+roda Laço1.js na pasta 27-05
