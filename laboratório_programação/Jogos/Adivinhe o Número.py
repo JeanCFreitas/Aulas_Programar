@@ -17,15 +17,16 @@ def adivinhação():
         chute = int(input("Digite seu palpite: "))
         tentativas += 1
         perto = numero - chute
-
         if chute < 1 or chute > 100:
             print("Por favor, digite um número entre 1 e 100.")
         elif chute < numero:
             print("Muito baixo. Tente novamente.")
+            perto = numero - chute
             if perto <=5:
                 print(f"Mais {perto} digitos para cima")
         elif chute > numero:
             print("Muito alto. Tente novamente.")
+            perto = chute - numero
             if perto <=5:
                 print(f"Mais {perto} digitos para baixo")
 

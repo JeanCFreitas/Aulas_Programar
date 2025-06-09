@@ -12,7 +12,7 @@ def mostrar_palavra(palavra, letras_certas):
     return ' '.join([letra if letra in letras_certas else '_' for letra in palavra])
 
 def jogo_da_forca():
-    palavras = ["sagaz", "termo", "nobre", "vigor", "poder", "carta"]
+    palavras = ["sagaz", "termo", "nobre", "vigor", "poder", "carta", "clube"]
     palavra = escolher_palavra(palavras)
     letras_tentadas = set()
     letras_certas = set()
@@ -51,5 +51,4 @@ def jogo_da_forca():
     else:
         print("\nVocê perdeu! A palavra era:", palavra)
 
-if __name__ == "__main__":
-    jogo_da_forca()
+jogo_da_forca()
