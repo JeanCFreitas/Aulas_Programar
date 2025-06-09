@@ -3,3 +3,4 @@
 #para tentar acertar os navios do computador. O sistema informa se o tiro acertou na 
 #água, num navio ou afundou um navio. O objetivo é afundar todos os navios do computador.
 
+# Não consegui fazer

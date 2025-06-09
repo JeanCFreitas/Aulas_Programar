@@ -4,7 +4,7 @@
 #de cada vez, e um disco maior nunca pode ser colocado sobre um menor).
 # O objetivo é que o usuário resolva o quebra-cabeça.
 
-# Recursive Python function to solve the tower of hanoi
+# Apenas Teste
 
 def torre(n, source, target, aux):
     if n == 1:
