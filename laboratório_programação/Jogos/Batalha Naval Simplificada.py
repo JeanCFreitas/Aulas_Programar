@@ -3,17 +3,15 @@
 #para tentar acertar os navios do computador. O sistema informa se o tiro acertou na 
 #água, num navio ou afundou um navio. O objetivo é afundar todos os navios do computador.
 
-# Não consegui fazer
-
 import random
 
 # Função para criar o tabuleiro vazio
 def criar_tabuleiro():
-    return [[' ' for _ in range(7)] for _ in range(7)]
+    return [['~' for _ in range(7)] for _ in range(7)]
 
 # Função para exibir o tabuleiro
 def exibir_tabuleiro(tabuleiro):
-    print("  A B C D E F G")
+    print("- A B C D E F G")
     for i, linha in enumerate(tabuleiro):
         print(f"{i + 1} {' '.join(linha)}")
 
@@ -35,13 +33,12 @@ def posicionar_navios():
 def jogo_batalha_naval():
     # Inicialização dos tabuleiros
     tabuleiro_usuario = criar_tabuleiro()
-    tabuleiro_computador = criar_tabuleiro()
     
     # Posicionando navios do computador
     navios_computador = posicionar_navios()
     navios_afundados = 0
 
-    print("Bem-vindo ao Jogo da Batalha Naval!")
+    print("Batalha Naval!")
     
     while navios_afundados < 3:
         exibir_tabuleiro(tabuleiro_usuario)
@@ -60,7 +57,7 @@ def jogo_batalha_naval():
             continue
 
         # Verificando se o jogador já atirou nessa célula
-        if tabuleiro_usuario[linha][coluna] != ' ':
+        if tabuleiro_usuario[linha][coluna] != '~':
             print("Você já tentou essa coordenada! Tente novamente.")
             continue
 

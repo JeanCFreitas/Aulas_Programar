@@ -2,8 +2,6 @@
 #O sistema deve apresentar uma pergunta de cada vez, permitir que o usuário selecione 
 #uma resposta e, em seguida, informar se a resposta está correta, atualizando uma pontuação.
 
-# Não consegui fazer
-
 def exibir_pergunta(pergunta, alternativas, resposta):
     print("\n" + pergunta)
     for i, alternativa in enumerate(alternativas, 1):
