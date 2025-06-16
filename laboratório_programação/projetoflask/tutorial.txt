@@ -1,0 +1,2 @@
+/home/estudante2/Documentos/projetoflask/.venv/bin/python /home/estudante2/Documentos/projetoflask/app.py
+Roda o app.py
