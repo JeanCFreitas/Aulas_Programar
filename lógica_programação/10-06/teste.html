@@ -63,14 +63,11 @@
   </div>
 
   <script>
-    function calcular() {
+    function calculardora() {
       const num1 = parseFloat(document.getElementById('num1').value);
       const num2 = parseFloat(document.getElementById('num2').value);
       const operador = document.getElementById('operador').value;
       let resultado;
-
-      if (isNaN(num1) || isNaN(num2)) {
-        resultado = "Por favor, insira dois números válidos.";
 
       switch (operador) {
         case '+':
@@ -90,7 +87,7 @@
         }
     }
       document.getElementById('resultado').innerText = `Resultado: ${resultado}`;
-    }
+    
   </script>
 
 </body>
