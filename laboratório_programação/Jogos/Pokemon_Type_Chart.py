@@ -5,7 +5,7 @@ typechart = {
     "elétrico":    {"terra": 2, "elétrico": 0.5, "voador": 0.5},
     "planta":      {"fogo": 2, "água": 0.5, "elétrico": 0.5, "gelo": 2, "voador": 2, "inseto": 2, "planta": 0.5, "veneno": 2},
     "gelo":        {"fogo": 2, "gelo": 0.5, "lutador": 2, "rocha": 2, "aço": 2},
-    "lutador":     {"voador": 2, "psíquico": 2, "inseto": 0.5, "rocha": 0.5, "sombrio": 0.5, "fantasma": 0},
+    "lutador":     {"voador": 2, "psíquico": 2, "inseto": 0.5, "rocha": 0.5, "sombrio": 0.5},
     "veneno":      {"terra": 2, "psíquico": 2, "planta": 0.5, "lutador": 0.5, "veneno": 0.5, "fantasma": 0.5},
     "terra":       {"água": 2, "planta": 2, "gelo": 2, "veneno": 0.5, "rocha": 0.5, "elétrico": 0},
     "voador":      {"elétrico": 2, "gelo": 2, "rocha": 2, "planta": 0.5, "lutador": 0.5, "inseto": 0.5, "terra": 0},
