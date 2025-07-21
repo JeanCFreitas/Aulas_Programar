@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">    
+    <title>Formulario</title>
+    <style>
+    li{
+        color:rgb(0, 0, 0);
+        font-family: Arial, Helvetica, sans-serif;
+        transform: translate(0%,50%);
+        font-size: 15px;
+    }
+    </style>
+</head>
+<body>
+{% with messages = get_flashed_messages() %}
+    {% if messages %}
+        <ul class=flashes>
+            {% for message in messages %}
+                <center><li>{{ message }}</li></center>
+            {% endfor %}
+        </ul>
+    {% endif %}
+{% endwith %}
+    <div class="container">
+        <center>
+            <form id="registrationForm" action="/cadastrar_usuario" method="post">
+            <br><br>
+                <label for="username"><h3>Usuário:</h3></label>
+                <input type="username" name="username"  ><br><br>
+        
+                <label for="password"><h3>Senha:</h3></label>
+                <input type="password" name="password" ><br><br>
+        
+                <label for="email"><h3>Email:</h3></label>
+                <input type="email" name="email" ><br><br>
+        
+                <button type="submit" id="butao">Cadastrar</button>
+                
+            </form>
+
+
+        </center>
+</body>
+</html>
