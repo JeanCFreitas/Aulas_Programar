@@ -9,7 +9,12 @@ from flask import Flask, render_template, request, flash, redirect, url_for
 app = Flask(__name__)
 @app.route('/', methods=['GET', 'POST'])
 def login():
-    return render_template('formulario.html',)
+    return render_template('catálogo.html',)
+
+@app.route('/noticias')
+def noticias():
+    username = request.cookies.get('username')
+    return render_template('noticias.html', user=username)
 
 if __name__ == '__main__':
     app.run(debug=True)
