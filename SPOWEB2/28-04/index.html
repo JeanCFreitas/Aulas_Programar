@@ -3,20 +3,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Consultar lista de tarefas unge</title>
-    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
-    <div class="lista-tarefas">
+    <div class="container">
         <h1>Lista de Tarefas</h1>
         <input id="tarefa" type="text" placeholder="Adicione uma tarefa">
         <button id="adicionar">Adicionar</button>
-        <ul id="tarefas">
-        </ul>
+
+        <h2>Tarefas a se fazer</h2>
+        <ul id="tarefas" class="tarefas"></ul>
+
+        <h2>Tarefas concluídas</h2>
+        <ul id="tarefas-concluidas" class="tarefas concluidas"></ul>
     </div>
 
-    
-    <script src="js/dom.js"></script>
-    
+    <!-- CORRIGIDO: caminho direto sem pasta js/ -->
+    <script src="script.js"></script>
+
 </body>
-</html
+</html>
