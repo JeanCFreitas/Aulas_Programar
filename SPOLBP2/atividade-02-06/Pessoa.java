@@ -3,7 +3,6 @@ public class Pessoa {
     private Integer idade;
     
     public Pessoa() {
-        
     }
     public Pessoa(String nome, Integer idade) {
         this.nome = nome;
@@ -24,7 +23,8 @@ public class Pessoa {
         this.idade = idade;
     }
 
-    public void exibirdados(){
-
+    public void exibirDados(){
+        System.out.println("Nome: " + nome);
+        System.out.println("Idade: " + idade);
     }
 }

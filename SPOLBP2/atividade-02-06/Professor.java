@@ -4,6 +4,7 @@ public class Professor extends Pessoa {
     private Double salario;
 
     public Professor() {
+        super();
     }
     public Professor(String nome, Integer idade, String disciplina, Double salario) {
         super( nome, idade );
@@ -25,7 +26,15 @@ public class Professor extends Pessoa {
         this.salario = salario;
     }
 
-    public void calcularSalarioAnual(){
+    public Double calcularSalarioAnual() {
+        return salario * 12;
+    }
 
+    @Override
+    public void exibirDados() {
+        super.exibirDados();
+        System.out.println("Disciplina: " + disciplina);
+        System.out.printf("Salário Mensal: R$ %.2f%n", salario);
+        System.out.printf("Salário Anual:  R$ %.2f%n", calcularSalarioAnual());
     }
 }

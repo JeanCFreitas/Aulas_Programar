@@ -33,4 +33,11 @@ public class Aluno extends Pessoa {
             System.out.println("Aluno reprovado");
         }
     }
+
+    @Override
+    public void exibirDados() {
+        super.exibirDados();
+        System.out.println("Matrícula: " + matricula);
+        System.out.printf("Nota: %.1f%n", nota);
+    }
 }
