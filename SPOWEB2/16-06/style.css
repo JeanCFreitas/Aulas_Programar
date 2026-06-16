@@ -1,0 +1,4 @@
+body { font-family: Arial, sans-serif; padding: 20px; }
+nav { margin-bottom: 20px; padding-bottom: 10px; border-bottom: 2px solid #ccc; }
+nav a { margin-right: 15px; text-decoration: none; color: #0066cc; font-weight: bold; }
+#app { padding: 20px; background-color: #f4f4f4; border-radius: 8px; }
