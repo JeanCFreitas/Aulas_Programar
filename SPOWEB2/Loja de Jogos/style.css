@@ -1,0 +1,11 @@
+body { font-family: sans-serif; background-color: #1e1e1e;
+color: #fff; padding: 20px; }
+nav { background-color: #333; padding: 15px;
+border-radius: 8px; margin-bottom: 20px; }
+nav a { color: #4CAF50; text-decoration: none;
+margin-right: 20px; font-weight: bold; font-size: 18px; }
+nav a:hover { color: #fff; }
+#conteudo { background-color: #2a2a2a; padding: 20px;
+border-radius: 8px; min-height: 200px; }
+.jogo-card { background: #444; padding: 10px; margin: 10px
+0; border-left: 4px solid #4CAF50; }
